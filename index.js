@@ -18,7 +18,7 @@ const Deposit = (state= initialValue , action) => {
 
 const bankStore = createStore(Deposit)
 
-
 bankStore.dispatch({type: "deposit" , payLoad: 1000})
 
+console.log(bankStore.getState())
 console.log(bankStore.getState())
